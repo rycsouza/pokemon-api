@@ -20,6 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+Route.get('/pokemons', 'PokemonsController.index')
+Route.post('/pokemons', 'PokemonsController.store')
+Route.put('/pokemons/:number', 'PokemonsController.update')
+Route.delete('/pokemons/:number', 'PokemonsController.destroy')
