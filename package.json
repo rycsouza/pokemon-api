@@ -9,7 +9,7 @@
     "test": "node ace test",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write .",
-    "vercel-build": "nnode ace migration:run --force"
+    "vercel-build": "node ace migration:run --force"
   },
   "eslintConfig": {
     "extends": [
